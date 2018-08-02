@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    defaultConfig {
+        applicationId PACKAGE_NAME
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+        multiDexEnabled true
+//        ndk {
+//            moduleName "serial_port"
+//            ldLibs "log", "z", "m"
+//            abiFilters "arm64-v8a","armeabi", "armeabi-v7a", "x86","x86_64","mips","mips64"
+//        }
+    }
+//    signingConfigs {
+//        release {
+//            keyAlias 'key'
+//            keyPassword '123456'
+//            storeFile file('srpaas_video.store')
+//            storePassword '123456'
+//        }
+//    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    dexOptions {
+        dexInProcess true
+        preDexLibraries true
+        javaMaxHeapSize "4g"//越大越好
+//        incremental true
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+//    buildToolsVersion '25.0.0'
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile files('libs/bugly_crash_release.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':PUBLIB')
+    compile project(':subMoudle:SRPAAS_VIDEO:SRPAAS_Video')
+    compile project(':subMoudle:SRLOGIN:PubLogin')
+    compile project(':subMoudle:SRVersion_Update:version_update')
+    compile project(':subMoudle:SRTransfer')
+    compile project(path: ':subMoudle:SRLOGIN:srloginhuijian')
+}

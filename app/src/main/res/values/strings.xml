@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">会见BOX</string>
+    <string name="nickname_edit_txt">昵称</string>
+    <string name="uid_edit_txt">输入UID</string>
+    <string name="input_confid">会议号</string>
+    <string name="start_meeting_btn_txt">开始会议</string>
+    <string name="join_meeting_btn_txt">加入会议</string>
+    <string name="notiy_msg_join_meet">如果您收到了邀请链接，请点击链接加入会议。</string>
+    <string name="no_zuto_connect_audio">不自动连接语音</string>
+    <string name="keep_camera_close">保持摄像头关闭</string>
+    <string name="server_adress">服务器地址</string>
+    <string name="sure_btn_txt">确定</string>
+    <string name="conf_no_null">会议号不能为空</string>
+    <string name="suirui_company">随锐科技</string>
+    <string name="communication_platform">高效的商务沟通平台</string>
+    <string name="exit_app">再按一次退出会见</string>
+    <string name="no_history_list">无历史会议记录</string>
+    <string name="please_input_nikename">请输入昵称</string>
+    <string name="please_input_confid">请输入会议号</string>
+    <string name="sr_login_out">退出</string>
+    <string name="sr_new_version">最新版本</string>
+    <string name="sr_update">更新</string>
+    <string name="sr_reload">重新下载</string>
+    <string name="sr_download_fail">下载失败</string>
+    <string name="sr_default_setting">默认</string>
+    <string name="sr_private_setting">私有化部署</string>
+    <string name="sr_agreement">协议:</string>
+    <string name="sr_addr">地址:</string>
+    <string name="sr_http">http</string>
+    <string name="sr_https">https</string>
+    <string name="sr_input_addr">手动输入地址</string>
+    <string name="sr_please_set_addr">请输入服务器地址</string>
+    <string name="sr_please_right_addr">请输入正确的服务器地址</string>
+    <string name="sr_version_update">版本升级</string>
+</resources>

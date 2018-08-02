@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="AppTheme" parent="@style/Theme.Leanback"></style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/activity_bg</item>
+
+    <item name="android:buttonStyle">@style/BButton</item>
+     <!--<item name="android:buttonStyleSmall">@style/BButton.Small</item>-->
+     <item name="android:textViewStyle">@style/BTextView</item>
+    <item name="android:editTextStyle">@style/BEditText</item>
+    <!-- <item name="android:windowTitleBackgroundStyle">@style/ZMWindowTitleBackground</item> -->
+     <item name="android:spinnerStyle">@style/BSpinner</item>
+     <item name="android:listSeparatorTextViewStyle">@style/BListSeparator</item>
+    <item name="android:listViewStyle">@style/BListView</item>
+    <item name="android:scrollViewStyle">@style/BScrollView</item>
+    <!--<item name="android:checkboxStyle">@style/BCheckbox</item>-->
+    <!-- <item name="android:radioButtonStyle">@style/ZMRadioButton</item> -->
+    <!--<item name="android:listChoiceIndicatorMultiple">@drawable/m_btn_check_default</item>-->
+     <!--<item name="android:progressBarStyle">@style/BProgressBar</item>-->
+     <!--<item name="android:progressBarStyleHorizontal">@style/BProgressBar.Horizontal</item>-->
+     <!--<item name="android:progressBarStyleSmall">@style/BProgressBar.Small</item>-->
+     <!--<item name="android:seekBarStyle">@style/BSeekBar</item>-->
+    <!--
+    <item name="android:windowActionBar">false</item>
+    <item name="android:actionBarStyle">@style/ZMActionBar</item>
+    <item name="android:popupMenuStyle">@style/ZMListPopupMenu</item>
+
+    -->
+        <item name="settingsCategoryAppearance">@style/SettingsCategory</item>
+    </style>
+
+    <style name="SettingsCategory" parent="android:Widget">
+    <item name="showTopDivider">true</item>
+    <item name="showBottomDivider">true</item>
+    <item name="showCenterDivider">true</item>
+    <item name="topDivider">@color/activity_bg</item>
+    <item name="centerDivider">@color/activity_bg</item>
+    <item name="bottomDivider">@color/activity_bg</item>
+    <item name="dividerHeight">@dimen/setting_item_divider_height</item>
+    <item name="settingsItemSelector">@drawable/m_join_history_list_selector</item>
+    <item name="seetingsItemMinHeight">@dimen/setting_item_min_height</item>
+    <item name="settingsCategoryBackground">@color/m_black_20</item>
+    </style>
+    <style name="SettingsCategory.Item" parent="android:Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="BCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:drawableLeft">@drawable/m_checkbox_left_selector</item>
+        <item name="android:drawableRight">@drawable/m_checkbox_right_selector</item>
+        <item name="android:background">@drawable/m_join_history_list_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/m_dialog_bg</item>
+        <item name="android:buttonStyle">@style/BButton</item>
+        <item name="android:textViewStyle">@style/BTextView</item>
+        <item name="android:editTextStyle">@style/BEditText</item>
+        <!--<item name="android:windowTitleBackgroundStyle">@style/BWindowTitleBackground</item>-->
+        <item name="android:spinnerStyle">@style/BSpinner</item>
+        <item name="android:listSeparatorTextViewStyle">@style/BListSeparator</item>
+        <item name="android:listViewStyle">@style/BListView</item>
+        <item name="android:scrollViewStyle">@style/BScrollView</item>
+        <!--<item name="android:checkboxStyle">@style/BCheckbox</item>-->
+        <item name="android:progressBarStyle">@style/BProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/BProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/BProgressBar.Small</item>
+
+        <item name="tipAppearance">@style/BTip</item>
+    </style>
+
+    <style name="BDialog.Slide" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/m_alert_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@style/DialogAnimation</item> -->
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="BDialog.Slide.Waiting" parent="BDialog.Slide">
+        <item name="android:windowBackground">@drawable/m_waiting_dialog_bg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="BSpinner" parent="android:Widget.Spinner">
+        <!--
+                <item name="android:background">@drawable/zm_btn_dropdown</item>
+                <item name="android:clickable">true</item>
+
+        -->
+    </style>
+    <style name="BListSeparator" parent="android:Widget.TextView">
+        <!--
+                <item name="android:background">#212421</item>
+                <item name="android:textSize">16sp</item>
+                <item name="android:layout_width">match_parent</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:textStyle">bold</item>
+                <item name="android:textColor">@color/zoom_white</item>
+                <item name="android:gravity">center_vertical</item>
+                <item name="android:paddingLeft">5sp</item>
+
+        -->
+    </style>
+    <style name="BScrollView" parent="android:Widget.ScrollView">
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!--<style name="BCheckbox" parent="android:Widget.CompoundButton.CheckBox">-->
+        <!--<item name="android:textColor">@drawable/m_button_text_color</item>-->
+        <!--<item name="android:button">@drawable/m_btn_check_default</item>-->
+    <!--</style>-->
+    <style name="BTip">
+        <item name="m_background">#ffffff</item>
+        <!-- <item name="m_background">@drawable/m_window_bg</item> -->
+        <item name="m_borderColor">#e0808080</item>
+        <item name="m_shadowColor">#ff505050</item>
+        <item name="m_backgroundColorIfHardwareAccelerated">#e0d7d7d7</item>
+    </style>
+
+    <style name="BDialogCommon" parent="BDialog">
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 透明 -->
+        <item name="android:windowBackground">@drawable/m_dialog_bg</item> 窗口背景色
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <!-- 重要，Dialog进出的显示动画 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否有覆盖 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- dialog的背景是否昏暗 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimAmount">1</item>
+    </style>
+
+
+
+
+    <style name="BEditText" parent="android:Widget.EditText">
+        <item name="android:textColorHint">#dddddd</item>
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:background">@drawable/meet_list_search_selector</item>
+    </style>
+
+
+
+    <!--<style name="BEditText.Small">-->
+        <!--<item name="android:background">@drawable/m_edit_text_small</item>-->
+        <!--<item name="android:minHeight">35dp</item>-->
+    <!--</style>-->
+
+    <style name="BEditText.NoBorder">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <!--<style name="BEditText.Line">-->
+        <!--<item name="android:background">@drawable/m_edit_text_line</item>-->
+    <!--</style>-->
+
+    <style name="BEditText.Common">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="BTextViewCommonLable" parent="android:Widget.TextView">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+
+    <style name="BButton" parent="android:Widget.Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:background">@drawable/btn_back_selector</item>
+    </style>
+
+    <style name="BButton.Common" parent="BButton">
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+    <style name="BButton.NoBackground">
+        <item name="android:textColor">@drawable/m_button_text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+    <style name="BButton.DialogTitleBar" parent="BButton.NoBackground">
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BButton.DialogBtn" parent="BButton.NoBackground">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:background">@drawable/m_button_common_selector</item>
+    </style>
+    <style name="BButton.SettingMenu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/m_icon_setting_text_selector</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">30dp</item>
+    </style>
+
+
+    <style name="BListView" parent="android:Widget.ListView">
+        <item name="android:background">@color/m_transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:dividerHeight">0.5dp</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:listSelector">@drawable/m_join_history_list_selector</item>
+        <item name="android:overScrollFooter">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    <style name="BListView.Transparent" parent="BListView">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BTextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/tv_txt_font</item>
+    </style>
+    <style name="BTextViewPhoneNumPanel" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/m_call_num_btn_selector</item>
+    </style>
+    <style name="BTextView.Time">
+        <item name="android:textColor">@color/m_white</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="BTextView.Time.ExtremLarge">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BTextView.ExtremLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BTextView.ExtremLarge.OnLight">
+        <item name="android:textColor">@color/m_text_light</item>
+    </style>
+    <style name="BTextView.Password" parent="BTextView">
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="BTextView.MainMenu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/m_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="BTextView.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BTextView.Large.OnLight">
+        <item name="android:textColor">@color/m_text_light</item>
+    </style>
+    <style name="BTextView.Large.OnDark">
+        <item name="android:textColor">@color/m_text_on_dark</item>
+    </style>
+
+
+    <style name="BTextView.Title" parent="BTextView.ExtremLarge.OnLight">
+        <item name="android:textColor">@color/m_white</item>
+    </style>
+
+    <style name="BTextView.DialogTitle" parent="BTextView.Large.OnLight">
+        <item name="android:textColor">@color/m_text_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BTextView.Large.Dialog" parent="BTextView.DialogTitle">
+        <item name="android:textColor">@color/m_text_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BTextView.Normal">
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BTextView.Normal.OnLight">
+        <item name="android:textColor">@color/m_text_on_light</item>
+    </style>
+    <style name="BTextView.Normal.OnDark">
+        <item name="android:textColor">@color/m_text_on_dark</item>
+    </style>
+    <style name="BTextView.Normal.OnLight.DialogTitle" parent="BTextView.Normal.OnLight">
+        <item name="android:textColor">@color/m_text_on_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BTextView.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BTextView.Medium.OnLight">
+        <item name="android:textColor">@color/m_text_on_light</item>
+    </style>
+
+
+    <style name="BTextView.SettingsItem">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/m_icon_setting_text_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/setting_item_padding_left</item>
+        <item name="android:paddingTop">@dimen/setting_item_padding_top</item>
+        <item name="android:paddingRight">@dimen/setting_item_padding_right</item>
+        <item name="android:paddingBottom">@dimen/setting_item_padding_bottom</item>
+        <item name="android:minHeight">@dimen/setting_item_min_height</item>
+    </style>
+
+    <style name="BTextView.SettingsItem.ErrorTips">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/setting_item_padding_left</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">@dimen/setting_item_email_min_height</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">20dp</item>
+    </style>
+
+
+    <style name="BTextView.SysInfoVersion">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/m_icon_setting_text_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">@dimen/setting_item_padding_left</item>
+        <item name="android:paddingRight">@dimen/setting_item_padding_right</item>
+    </style>
+    <style name="BProgressBar" parent="android:Widget.ProgressBar">
+        <!-- <item name="android:indeterminateDrawable">@drawable/zm_progress_default</item> -->
+    </style>
+
+    <style name="BProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <!-- <item name="android:progressDrawable">@drawable/zm_progress_horizontal</item> -->
+    </style>
+
+    <style name="BProgressBar.Small" parent="android:Widget.ProgressBar.Small">
+        <!-- <item name="android:indeterminateDrawable">@drawable/zm_progress_default</item> -->
+    </style>
+
+    <!--<style name="BProgressBar.MeetingRefresh" parent="android:Widget.ProgressBar.Small">-->
+        <!--<item name="android:indeterminateDrawable">@drawable/m_meeting_refresh_progress</item>-->
+        <!--<item name="android:minWidth">24dp</item>-->
+        <!--<item name="android:maxWidth">24dp</item>-->
+        <!--<item name="android:minHeight">24dp</item>-->
+        <!--<item name="android:maxHeight">24dp</item>-->
+    <!--</style>-->
+    <style name="BProgressBar.Large" parent="android:Widget.ProgressBar.Large">
+        <!-- <item name="android:indeterminateDrawable">@drawable/zm_progress_default</item> -->
+    </style>
+
+    <style name="BTitleBar">
+        <!--<item name="android:background">@drawable/prompt_top_bg</item>-->
+         <item name="android:background">@color/m_dark</item>
+        <item name="android:height">40dp</item>
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:paddingRight">3dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BTitleBarTwoCode" parent="BTitleBar">
+        <item name="android:height">60dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="BackButton" parent="BButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/m_white</item>
+        <!--<item name="android:background">@drawable/m_btn_back</item>-->
+    </style>
+
+
+    <style name="tab_meet_list">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/tv_txt_font</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="meeting_list_item_linear_style">
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <style name="meeting_item_subject_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tv_txt_font</item>
+
+    </style>
+    <style name="meeting_item_master_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/list_item_txt_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="txt_hight_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:background">@drawable/txt_long_bg</item>
+    </style>
+
+    <style name="hj_tv_custom_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="hj_tv_detail_title_style">
+        <item name="android:textColor">#bbeeff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="hj_tv_invite_diaolog_style">
+        <item name="android:textColor">#bbeeff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+    <style name="hj_tv_detail_content_style">
+        <item name="android:textColor">#89b5c6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+    <style name="hj_tv_detail_content_more_style">
+        <item name="android:textColor">#89b5c6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+
+    <style name="hj_tv_detail_linear_style">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="hj_dialog_ctivity" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="hj_activity" parent="@style/AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

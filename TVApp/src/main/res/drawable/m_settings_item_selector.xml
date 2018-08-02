@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_window_focused="false" android:drawable="@color/m_transparent" />
+
+    <!-- Even though these two point to the same resource, have two states so the drawable will invalidate itself when coming out of pressed state. -->
+    <item android:state_focused="true" android:state_enabled="false" android:state_pressed="true">
+    	 <!-- m_highlight_disabled -->
+    	<shape>
+            <solid android:color="@color/activity_left_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_enabled="false">
+        <!-- m_highlight_disabled -->
+    	<shape>
+            <solid android:color="@color/activity_left_bg" />
+        </shape>
+    </item>
+     <item android:state_focused="false" android:state_enabled="false">
+        <!-- m_highlight_disabled -->
+    	<shape>
+            <solid android:color="@color/setting_enable" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="true">
+    	 <!--m_highlight_pressed  -->
+    	<shape>
+            <solid android:color="#00FF00" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="true" >
+        <!--m_highlight_pressed  -->
+    	<shape>
+            <solid android:color="#FF00FF" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <!-- m_highlight -->
+    	<shape>
+            <!--<solid android:color="#FF0000" />-->
+            <solid android:color="#FF0000" />
+        </shape>
+    </item>
+     <item android:state_selected="true">
+    	<shape>
+            <solid android:color="#FFFF00" />
+        </shape>
+    </item>
+     <item android:state_selected="false">
+    	<shape>
+            <solid android:color="@color/activity_left_bg" />
+        </shape>
+    </item>
+</selector>

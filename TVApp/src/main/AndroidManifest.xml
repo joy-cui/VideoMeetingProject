@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+
+    package="org.suirui.huijian.tv"
+    android:installLocation="preferExternal" >
+    <!--android:sharedUserId="android.uid.system"-->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="androd.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--<uses-feature-->
+        <!--android:name="android.hardware.touchscreen"-->
+        <!--android:required="false" />-->
+    <!--<uses-feature-->
+        <!--android:name="android.software.leanback"-->
+        <!--android:required="true" />-->
+
+    <application
+        android:name=".TVAppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+        <!--Android 7.0解决下载安装apk的问题-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/authoritise"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name=".activity.LogoActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 增加以下两行 -->
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".activity.WelcomeActivity"-->
+            <!--android:banner="@drawable/app_icon_your_company"-->
+            <!--android:icon="@drawable/app_icon_your_company"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:logo="@drawable/app_icon_your_company"-->
+            <!--android:screenOrientation="landscape">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            >
+        </activity>
+        <activity
+            android:name=".activity.JoinMeetingActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".activity.MeetingListActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/hj_activity"
+            />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".activity.InviteDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/hj_dialog_ctivity"></activity>
+
+     <service android:name="org.suirui.huijian.tv.AcceptPushService"/>
+
+        <!--<receiver android:name=".InstallReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REPLACED"/>-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

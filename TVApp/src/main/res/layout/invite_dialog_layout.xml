@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/invite_bg_color"
+    android:orientation="vertical"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_load_icon"
+            android:layout_centerInParent="true"/>
+
+        <ImageView android:id="@+id/invite_load_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_loading"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/invite_to_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        style="@style/hj_tv_invite_diaolog_style"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/invite_refuse_txt"
+            style="@style/hj_tv_invite_diaolog_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_invite_resfuse_selector"
+            android:text="@string/hj_meet_to_invite_refuse"
+            android:focusable="true"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            />
+        <TextView
+            android:id="@+id/invite_accept_txt"
+            style="@style/hj_tv_invite_diaolog_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_invite_accept_selector"
+            android:focusable="true"
+            android:text="@string/hj_meet_to_invite_accept"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:layout_marginLeft="30dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

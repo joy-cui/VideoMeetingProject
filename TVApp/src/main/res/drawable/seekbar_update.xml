@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background" android:drawable="@drawable/progress_bg">
+    </item>
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/progress_bg">
+    </item>
+    <item android:id="@android:id/progress" android:drawable="@drawable/progress_bar_bg">
+    </item>
+
+
+    <!--<item android:id="@android:id/background" android:drawable="@drawable/progress_bg" />-->
+    <!--<item android:id="@android:id/secondaryProgress">-->
+        <!--<scale android:drawable="@drawable/progress_bg" android:scaleWidth="100%" />-->
+    <!--</item>-->
+    <!--<item android:id="@android:id/progress">-->
+        <!--<scale android:drawable="@drawable/progress_bar_bg" android:scaleWidth="100%" />-->
+    <!--</item>-->
+
+    <!--<item android:id="@android:id/background">-->
+        <!--<shape>-->
+            <!--<corners android:radius="5dip" />-->
+
+            <!--<gradient-->
+                <!--android:angle="90"-->
+                <!--android:centerColor="@color/text_color_green_1"-->
+                <!--android:endColor="@color/progress"-->
+                <!--android:startColor="@color/text_color_green_1"-->
+                <!--android:type="linear" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:id="@android:id/progress">-->
+        <!--<clip>-->
+            <!--<shape>-->
+                <!--<corners android:radius="5dip" />-->
+
+                <!--<gradient-->
+                    <!--android:angle="90"-->
+                    <!--android:endColor="@color/no_progress"-->
+                    <!--android:startColor="@color/no_progress"-->
+                    <!--android:type="linear" />-->
+            <!--</shape>-->
+        <!--</clip>-->
+    <!--</item>-->
+
+</layer-list>

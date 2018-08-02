@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--style="@style/BTextView.Large"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="0dp"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:background="@drawable/txt_long_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/m_mic"/>-->
+
+            <org.suirui.huijian.tv.widget.SettingsCategory
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_common_padding_top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/setting_item_padding_right">
+
+                    <TextView
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/m_mic"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <SeekBar
+                            android:id="@+id/testMicSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:maxHeight="5dip"
+                            android:minHeight="5dip"
+                            android:progress="10"
+                            android:progressDrawable="@drawable/seekbar_progress"
+                            android:thumb="@null"
+                            android:thumbOffset="0dip"
+                            android:focusable="false"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/BButton.Common"
+                        android:id="@+id/btnTestMic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/m_test"
+                        android:textColor="@color/tv_txt_font"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/setting_item_padding_right">
+
+                    <TextView
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/m_speaker"/>
+
+                    <LinearLayout
+                        android:id="@+id/micSeekbarLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:duplicateParentState="true"
+                            android:src="@drawable/m_volume_less"/>
+
+                        <SeekBar
+                            android:id="@+id/volumeSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:max="255"
+                            android:maxHeight="4dip"
+                            android:minHeight="4dip"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:progressDrawable="@drawable/seekbar_progress"
+                            android:thumb="@drawable/thumb"
+                            android:thumbOffset="0dip"
+                            android:focusable="false"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:duplicateParentState="true"
+                            android:src="@drawable/m_volume_add"/>
+                    </LinearLayout>
+                    <Button
+                        style="@style/BButton.Common"
+                        android:id="@+id/btnTestSpeaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/m_test"
+                        android:nextFocusLeft="@id/volumeSeekbar"
+                        android:textColor="@color/tv_txt_font"/>
+                </LinearLayout>
+
+
+            </org.suirui.huijian.tv.widget.SettingsCategory>
+
+
+            <!--<TextView-->
+                <!--style="@style/BTextView.Large"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="0dp"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:background="@drawable/txt_long_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/m_mic"/>-->
+
+            <LinearLayout
+                android:id="@+id/audioManageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <!--<org.suirui.huijian.tv.widget.SettingsCategory-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/m_common_padding_top"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingRight="@dimen/setting_item_padding_right"-->
+                    <!--android:focusable="false"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<TextView-->
+                        <!--style="@style/BTextView.SettingsItem"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/m_audio_device"/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/audioDeviceTV"-->
+                        <!--style="@style/BTextView.SettingsItem"-->
+                        <!--android:background="@drawable/m_join_history_list_selector"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:paddingLeft="30dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:gravity="left|center_vertical"-->
+                        <!--android:clickable="true"-->
+                        <!--android:focusable="true"-->
+                        <!--android:drawableRight="@drawable/m_drop_arrow"-->
+                        <!--android:text=""/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingRight="@dimen/setting_item_padding_right">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/BTextView.SettingsItem"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="left"-->
+                        <!--android:text="@string/m_audio_call_type"/>-->
+                    <!--<TextView-->
+                        <!--style="@style/BTextView"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="left|center_vertical"-->
+                        <!--android:paddingRight="10dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/m_audio_call_type_desc"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/chbAutoSpeaker"-->
+                        <!--style="@style/BCheckBox"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"/>-->
+                <!--</LinearLayout>-->
+
+
+            <!--</org.suirui.huijian.tv.widget.SettingsCategory>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"/>
+</LinearLayout>

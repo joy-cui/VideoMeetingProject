@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1d496e"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/BTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/setting_item_min_height"
+        android:layout_marginTop="@dimen/setting_item_padding_top"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:text="XXX"
+        android:textColor="@color/m_white" />
+
+    <org.suirui.huijian.tv.widget.SettingsCategory
+        style="@style/SettingsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d6491"
+            android:orientation="horizontal"
+            android:padding="@dimen/setting_item_padding_right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d6491"
+            android:orientation="horizontal"
+            android:padding="@dimen/setting_item_padding_right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:src="@drawable/set_speaker_least_icon" />-->
+
+            <SeekBar
+                android:id="@+id/speaker_seakbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:max="255"
+                android:maxHeight="4dip"
+                android:minHeight="4dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/thumb"
+                android:thumbOffset="0dip" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:src="@drawable/set_speaker_maximum_icon" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optionTestSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#2d6491"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:minHeight="62dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvTestSpeaker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="VVVV"
+                android:textColor="@color/m_white" />
+        </LinearLayout>
+    </org.suirui.huijian.tv.widget.SettingsCategory>
+
+    <!--<TextView-->
+        <!--style="@style/BTextView.Normal.Dimmed"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/setting_item_min_height"-->
+        <!--android:gravity="bottom"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="@string/m_device_list"-->
+        <!--android:textColor="@color/m_white" />-->
+
+    <!--<org.suirui.huijian.tv.widget.SettingsCategory-->
+        <!--style="@style/SettingsCategory.Setting_mic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/setting_speaker_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/setting_list_selected"-->
+            <!--android:choiceMode="singleChoice"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:scrollbars="@null" />-->
+    <!--</org.suirui.huijian.tv.widget.SettingsCategory>-->
+
+</LinearLayout>

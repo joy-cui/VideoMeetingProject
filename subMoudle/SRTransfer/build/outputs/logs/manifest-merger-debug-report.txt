@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:11-40
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:3:5-80
+	android:name
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml:3:22-78
+uses-sdk
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		ADDED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml
+		INJECTED from /Users/test/AndroidStudioProjects/company/SRHuiJian_Box/subMoudle/SRTransfer/src/main/AndroidManifest.xml

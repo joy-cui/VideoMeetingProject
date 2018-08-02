@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1d496e"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/BTextView.SettingsItem"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/setting_item_min_height"
+        android:layout_marginTop="@dimen/setting_item_padding_top"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:text="XXX"
+        android:textColor="@color/m_white" />
+
+    <org.suirui.huijian.tv.widget.SettingsCategory
+        style="@style/SettingsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#2d6491"
+            android:gravity="center"
+            android:minHeight="62dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/setting_item_padding_right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/set_speaker_least_icon"-->
+                <!--android:visibility="gone" />-->
+
+            <SeekBar
+                android:id="@+id/mic_seakbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:max="255"
+                android:maxHeight="5dip"
+                android:minHeight="5dip"
+                android:progress="10"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@null"
+                android:thumbOffset="0dip" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:src="@drawable/set_speaker_maximum_icon"-->
+                <!--android:visibility="gone" />-->
+        </LinearLayout>
+    </org.suirui.huijian.tv.widget.SettingsCategory>
+
+    <!--<TextView-->
+        <!--style="@style/BTextView.Normal.Dimmed"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/setting_item_min_height"-->
+        <!--android:gravity="bottom"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="@string/m_device_list"-->
+        <!--android:textColor="@color/m_white" />-->
+
+    <!--<org.suirui.huijian.tv.widget.SettingsCategory-->
+        <!--style="@style/SettingsCategory.Setting_mic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="5dp" >-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/setting_mic_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/setting_list_selected"-->
+            <!--android:choiceMode="singleChoice"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:scrollbars="@null" />-->
+    <!--</org.suirui.huijian.tv.widget.SettingsCategory>-->
+
+    <!--<org.suirui.huijian.tv.widget.SettingsCategory-->
+        <!--style="@style/SettingsCategory.Setting_mic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/setting_item_min_height"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingRight="@dimen/setting_item_padding_right" >-->
+
+            <!--<TextView-->
+                <!--style="@style/BTextView.SettingsItem.Small"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:text="@string/software_echo_cancle" />-->
+
+            <!--<CheckedTextView-->
+                <!--android:id="@+id/chkRemoveVoice"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:checkMark="@drawable/m_btn_toggle_default"-->
+                <!--android:contentDescription="@string/m_lock_setting" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/chkAutoMicVolumeLinearLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingRight="@dimen/setting_item_padding_right" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/chkAutoMicVolumeLable"-->
+                <!--style="@style/BTextView.SettingsItem.Small"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:text="@string/auto_change_mic_volum" />-->
+
+            <!--<CheckedTextView-->
+                <!--android:id="@+id/chkAutoMicVolume"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:checkMark="@drawable/m_btn_toggle_default"-->
+                <!--android:contentDescription="@string/m_lock_setting" />-->
+        <!--</LinearLayout>-->
+    <!--</org.suirui.huijian.tv.widget.SettingsCategory>-->
+
+</LinearLayout>

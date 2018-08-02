@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.4"
+            android:background="@color/m_transparent"
+            android:orientation="horizontal"/>
+        <!--menu-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/m_transparent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"/>
+
+                <Button
+                    android:id="@+id/btnSettingMenuAccount"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_account_selector"
+                    android:text="@string/m_setting_account"/>
+
+                <Button
+                    android:id="@+id/btnSettingMenuAudio"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_audio_selector"
+                    android:text="@string/m_setting_audio"/>
+                <Button
+                    android:id="@+id/btnSettingMenuCamera"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_camera_selector"
+                    android:text="@string/m_setting_camera"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/btnSettingMenuNet"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_net_selector"
+                    android:text="@string/m_setting_net"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/m_transparent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_net_selector"
+                    android:text="@string/m_setting_net"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnSettingMenuSys"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_sys_selector"
+                    android:text="@string/m_setting_sys"/>
+                <Button
+                    android:id="@+id/btnSettingMenuSysInfo"
+                    style="@style/BButton.SettingMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/m_icon_setting_sysinfo_selector"
+                    android:text="@string/m_sys_info"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/m_transparent"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+</LinearLayout>

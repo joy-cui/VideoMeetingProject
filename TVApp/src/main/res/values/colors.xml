@@ -1,0 +1,70 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+
+
+
+    <color name="m_highlight">#2da5ff</color>
+    <color name="m_highlight_pressed">#2d8cff</color>
+    <color name="m_highlight_focused">#2dd7ff</color>
+    <color name="m_highlight_disabled">#c0c0c0</color>
+    <color name="m_text_disable">#b3333333</color>
+    <color name="m_white">#ffffff</color>
+    <color name="m_black">#000000</color>
+    <color name="m_transparent">#00FFFFFF</color>
+    <color name="m_setting_option">#333333</color>
+    <color name="m_settings_category_background">#ffffff</color>
+    <color name="m_dark">#555555</color>
+    <color name="m_text_dim">#939393</color>
+    <color name="m_text_on_light">#333333</color>
+    <color name="m_text_on_dark">#ffffff</color>
+    <color name="progress">#1d496e</color>
+    <color name="no_progress">#a4fdfb</color>
+    <!-- 背景蓝色 -->
+    <color name="activity_bg">#0b293d</color>
+    <color name="activity_left_bg">#183e5d</color>
+    <!-- 弹框标题文字的颜色（浅绿色） -->
+    <color name="text_color_green_1">#3bb627</color>
+    <!-- 弹框标题文字的颜色（蓝黑色） -->
+    <color name="text_color_dialog_1">#173c6f</color>
+    <!-- 登录按钮背景颜色 -->
+    <color name="login_button_bg">#76b92c</color>
+    <!-- 设置界面中条目选中时的颜色 -->
+    <color name="setting_list_selected">#4376a1</color>
+    <color name="diliver_line_bg">#b4aaa8</color>
+    <color name="m_contacts_line_type">#75b92c</color>
+    <color name="m_text_light">#d6edff</color>
+    <color name="m_text_change_meetroominfo_tips">#46d6edff</color>
+
+    <color name="m_text_dark">#c2c2c2</color>
+    <color name="m_text_invite_dark">#70b7f3</color>
+    <color name="dialog_title_bg">#d8edff</color>
+    <color name="dialog_gray_bg">#e9e9e9</color>
+    <!-- 左侧导航栏的背景颜色 -->
+    <color name="left_tabbar_bg">#04111b</color>
+    <!-- 不透明度为30 -->
+    <color name="m_text_light_with_30">#b2d6edff</color>
+    <color name="m_meet_list_title_bg">#33638a</color>
+    <color name="setting_enable">#2a4d6a</color>
+    <color name="text_gray">#c0c1c2</color>
+    <color name="text_finish_color">#dc1e1e</color>
+
+    <!-- 不透明度为30 -->
+    <color name="m_black_30">#b2000000</color>
+    <color name="m_black_20">#33000000</color>
+    <color name="m_white_60">#99ffffff</color>
+    <color name="m_white_30">#33ffffff</color>
+    <!--会议列表-->
+    <color name="tv_txt_font">#bbeeff</color>
+    <color name="tv_view_bg_color">#65ffffff</color>
+    <!--<color name="list_item_bg_color">#cc000000</color>-->
+    <color name="list_item_high_txt_color">#2a78ba</color>
+    <color name="list_item_txt_color">#9ea7ad</color>
+
+    <color name="list_detail_line_color">#65000000</color>
+    <color name="invite_bg_color">#65000000</color>
+</resources>

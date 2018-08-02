@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="AppTheme">
+        <attr name="tipAppearance" format="reference"/>
+        <attr name="settingsLayoutAppearance" format="reference"/>
+        <attr name="settingsCategoryAppearance" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="BTip">
+        <attr name="m_borderColor" format="color"/>
+        <attr name="m_shadowColor" format="color"/>
+        <attr name="m_background" format="color|reference"/>
+        <attr name="m_backgroundColorIfHardwareAccelerated" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingsCategory">
+        <attr name="showTopDivider" format="boolean"/>
+        <attr name="showCenterDivider" format="boolean"/>
+        <attr name="showBottomDivider" format="boolean"/>
+        <attr name="topDivider" format="reference"/>
+        <attr name="bottomDivider" format="reference"/>
+        <attr name="centerDivider" format="reference"/>
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="settingsItemSelector" format="reference"/>
+        <attr name="seetingsItemMinHeight" format="dimension"/>
+        <attr name="settingsCategoryBackground" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="borderWidth" format="dimension"></attr>
+        <attr name="unprogresColor" format="color"></attr>
+        <attr name="progressColor" format="color"></attr>
+        <attr name="tickWidth" format="dimension"></attr>
+        <attr name="tickDensity" format="integer"></attr>
+        <attr name="bgShow" format="boolean"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="arcbgColor" format="color"></attr>
+        <attr name="degree" format="integer"></attr>
+        <attr name="arcCapRound" format="boolean"></attr>
+        <attr name="startColor" format="color"></attr>
+        <attr name="endColor" format="color"></attr>
+        <attr name="isGradual" format="boolean"></attr>
+        <attr name="progressStyle" format="enum">
+            <enum name="tick" value="1"></enum>
+            <enum name="arc" value="0"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

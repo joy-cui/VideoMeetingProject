@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--style="@style/BTextView.Large"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="0dp"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:background="@drawable/txt_long_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/m_mic"/>-->
+
+    <org.suirui.huijian.tv.widget.SettingsCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m_common_padding_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/setting_item_padding_right">
+
+            <TextView
+                style="@style/BTextView.SettingsItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_audio_device"/>
+
+            <TextView
+                android:id="@+id/audioDeviceTV"
+                style="@style/BTextView.SettingsItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/m_join_history_list_selector"
+                android:clickable="true"
+                android:drawableRight="@drawable/m_drop_arrow"
+                android:focusable="true"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/autoSpeakerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/setting_item_padding_right">
+
+            <TextView
+                style="@style/BTextView.SettingsItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/m_audio_call_type"/>
+
+            <TextView
+                style="@style/BTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="@string/m_audio_call_type_desc"/>
+
+            <CheckBox
+                android:id="@+id/chbAutoSpeaker"
+                style="@style/BCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </org.suirui.huijian.tv.widget.SettingsCategory>
+</LinearLayout>

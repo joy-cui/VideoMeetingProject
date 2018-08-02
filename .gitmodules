@@ -1,0 +1,31 @@
+[submodule "app/src/main/assets/HuiJianHtml"]
+	path = app/src/main/assets/HuiJianHtml
+	url = git@git.suirui.com:html/HuiJianHtml.git
+[submodule "subMoudle/SRIMMedia"]
+	path = subMoudle/SRIMMedia
+	url = git@git.suirui.com:SRAndroid_LIB/SRIMMedia.git
+[submodule "subMoudle/SRLOGIN"]
+	path = subMoudle/SRLOGIN
+	url = git@git.suirui.com:SRAndroid_LIB/SRLOGIN.git
+[submodule "subMoudle/SRPAAS_Logic"]
+	path = subMoudle/SRPAAS_Logic
+	url = git@git.suirui.com:SRAndroid_LIB/SRPAAS_Logic.git
+
+[submodule "subMoudle/SRVersion_Update"]
+	path = subMoudle/SRVersion_Update
+	url = git@git.suirui.com:SRAndroid_LIB/SRVersion_Update.git
+[submodule "subMoudle/SRPAAS_VIDEO"]
+	path = subMoudle/SRPAAS_VIDEO
+	url = git@git.suirui.com:SRAndroid_LIB/SRPAAS_VIDEO.git
+
+
+[submodule "subMoudle/SRTransfer"]
+	path = subMoudle/SRTransfer
+	url = git@git.suirui.com:SRAndroid_LIB/SRTransfer.git
+
+[submodule "subMoudle/WebSocket"]
+	path = subMoudle/WebSocket
+	url = git@git.suirui.com:SRAndroid_LIB/WebSocket.git
+[submodule "subMoudle/UsbCamera"]
+	path = subMoudle/UsbCamera
+	url = git@git.suirui.com:SRAndroid_LIB/UsbCamera.git

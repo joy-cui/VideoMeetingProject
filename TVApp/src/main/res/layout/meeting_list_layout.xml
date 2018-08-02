@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/meet_top_height"
+       android:gravity="bottom"
+       android:layout_marginLeft="40dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:id="@+id/tab_meeting"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="15dp"
+               android:layout_weight="1" >
+               <TextView
+                   android:id="@+id/meeting_txt"
+                   style="@style/tab_meet_list"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/hj_meeting_txt"
+                   />
+               <View android:id="@+id/meeting_view"
+                   android:layout_width="match_parent"
+                   android:layout_height="4dp"
+                   android:background="@color/tv_view_bg_color"
+                   android:focusable="false"/>
+
+           </LinearLayout >
+
+        <LinearLayout
+            android:id="@+id/tab_no_meeting"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/no_meeting_txt"
+                style="@style/tab_meet_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hj_no_meeting_txt"
+               />
+            <View android:id="@+id/no_meeting_view"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/tv_view_bg_color"
+                android:focusable="false"/>
+
+        </LinearLayout >
+       </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+              <EditText
+                    android:id="@+id/search"
+                    android:layout_width="@dimen/meet_search_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/meet_list_search_selector"
+                    android:hint="@string/hj_search_txt"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="@dimen/search_edit_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/tv_txt_font"
+                    android:textSize="@dimen/m_lable_size"
+                  android:focusableInTouchMode="true"
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_search_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:focusable="false"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#66ffffff"
+    android:layout_marginTop="0dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_marginBottom="100dp"
+        />
+
+    <Button android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hj_back"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_back_selector"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_below="@+id/view_page"/>
+    </FrameLayout>
+</LinearLayout>

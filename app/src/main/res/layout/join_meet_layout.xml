@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="backBtn"
+            android:src="@drawable/back_click_selector" />
+
+        <TextView
+            style="@style/text_type_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/sr_join_meeting"
+            android:textColor="@color/text_dark_color" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/person_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/notiy_msg_join_meet" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/person_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sr_white">
+
+        <EditText
+            android:id="@+id/confid_edit"
+            style="@style/sr_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_btn_selector"
+            android:gravity="center"
+            android:hint="@string/input_confid"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_dark_color"
+            android:textColorHint="@color/text_gray_color" />
+
+        <ImageView
+            android:id="@+id/hj_btn_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="historyData"
+            android:padding="10dp"
+            android:src="@drawable/unfold_icon" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/person_line" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/sr_EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_btn_selector"
+        android:gravity="center"
+        android:hint="@string/nickname_edit_txt"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_dark_color"
+        android:textColorHint="@color/text_gray_color" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/person_line" />
+
+
+    <Button
+        android:id="@+id/join_meeting_btn"
+        style="@style/text_type_18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_bt_disabled"
+        android:onClick="joinMeeting"
+        android:text="@string/sr_join_meeting"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/sr_login_txt_16sp_size" />
+</LinearLayout>

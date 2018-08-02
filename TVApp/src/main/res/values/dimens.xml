@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="m_lable_size">20sp</dimen>
+    <dimen name="m_common_padding_top">40dp</dimen>
+    <dimen name="setting_item_group_spacing">15dp</dimen>
+    <dimen name="setting_item_padding_left">20dp</dimen>
+    <dimen name="setting_item_padding_right">20dp</dimen>
+    <dimen name="setting_item_padding_top">10dp</dimen>
+    <dimen name="setting_item_padding_bottom">10dp</dimen>
+    <dimen name="setting_item_divider_height">1dp</dimen>
+    <dimen name="setting_item_min_height">70dp</dimen>
+    <dimen name="setting_item_email_min_height">40dp</dimen>
+    <!--会议列表 -->
+
+    <dimen name="search_edit_padding">55dp</dimen>
+    <dimen name="meet_top_height">100dp</dimen>
+    <dimen name="meet_search_width">400dp</dimen>
+    <dimen name="invite_btn_width">240dp</dimen>
+</resources>

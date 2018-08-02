@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInputTips"
+            style="@style/BTextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/m_set_server_address"/>
+
+        <TextView
+            android:id="@+id/tvHttp"
+            style="@style/BTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/meet_list_search_selector"
+            android:clickable="true"
+            android:drawableRight="@drawable/m_drop_arrow"
+            android:focusable="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="http"/>
+
+        <ListView
+            android:id="@+id/httpListview"
+            style="@style/BListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:paddingLeft="0dp"
+            android:scrollbars="@null"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtServer"
+            style="@style/BEditText.Common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLength="30"
+            android:text="192.168.61.39"/>
+
+        <TextView
+            android:id="@+id/tvIPError"
+            style="@style/BTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/m_ip_formatter_error"/>
+
+        <Button
+            android:id="@+id/btnInputServer"
+            style="@style/BButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/m_ok"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"/>
+</LinearLayout>

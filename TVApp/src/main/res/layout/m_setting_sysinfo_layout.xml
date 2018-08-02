@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/BTextView.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/txt_long_bg"
+                android:gravity="center"
+                android:text="@string/m_hardware_info"/>
+
+            <org.suirui.huijian.tv.widget.SettingsCategory
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/setting_item_padding_top"
+                android:orientation="vertical">
+                <!-- ip -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/setting_item_padding_right">
+
+                    <TextView
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/m_ip"/>
+
+                    <TextView
+                        android:id="@+id/ipAddressTV"
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"/>
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/m_set_arrow_selector"/>-->
+                </LinearLayout>
+
+                <!-- wifi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/setting_item_padding_right">
+
+                    <TextView
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/m_wifi"/>
+
+                    <TextView
+                        android:id="@+id/wifiAddressTV"
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <!--mac-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/setting_item_padding_right">
+
+                    <TextView
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/m_mac"/>
+
+                    <TextView
+                        android:id="@+id/macAddressTV"
+                        style="@style/BTextView.SettingsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </org.suirui.huijian.tv.widget.SettingsCategory>
+
+            <TextView
+                style="@style/BTextView.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/txt_long_bg"
+                android:gravity="center"
+                android:text="@string/m_version_info"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/setting_item_padding_top"
+                android:background="@color/m_black_20"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/BTextView.SysInfoVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:text="@string/m_version_info"/>
+                <!-- version-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/setting_item_padding_right">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                        <TextView
+                            style="@style/BTextView.SysInfoVersion"
+                            android:id="@+id/curVersionTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/m_cur_version_info"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            style="@style/BTextView.SysInfoVersion"
+                            android:id="@+id/newVersionTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/m_new_version_info"
+                            android:textSize="18sp"/>
+                        </LinearLayout>
+                        <Button
+                            style="@style/BButton.Common"
+                            android:id="@+id/btnUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:text="@string/m_version_update"/>
+                    </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"/>
+</LinearLayout>
